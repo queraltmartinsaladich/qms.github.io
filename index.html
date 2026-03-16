@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=glacial-indifference@400,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'peach': '#FFCCBB',       /* Dainty Peach */
-                            'water': '#6EB5C0',       /* Water Music */
-                            'azure': '#006C84',       /* Azure Green Blue */
-                            'arctic': '#E2E8E4',      /* Arctic Sunrise / Rarified Air */
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'peach': '#FFCCBB',       /* Dainty Peach */
+                        'water': '#6EB5C0',       /* Water Music */
+                        'azure': '#006C84',       /* Azure Green Blue */
+                        'arctic': '#E2E8E4',      /* Arctic Sunrise / Rarified Air */
+                            }
                         }
-                    }
-                }
-            }
-        </script>
+                    }}
+    </script>
+    <style>
+        /* This ensures the font feels "intentional" and smooth */
+        body {letter-spacing: -0.01em;}
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
