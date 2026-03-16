@@ -10,34 +10,35 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: { 'sans': ['"Glacial Indifference"', 'sans-serif'] },
                     colors: {
-                        'peach': '#FFCCBB',       /* Dainty Peach */
-                        'water': '#6EB5C0',       /* Water Music */
-                        'azure': '#006C84',       /* Azure Green Blue */
-                        'arctic': '#E2E8E4',      /* Arctic Sunrise / Rarified Air */
-                            }
-                        }
-                    }}
+                        'peach': '#FFCCBB', 'water': '#6EB5C0',
+                        'azure': '#006C84', 'arctic': '#E2E8E4',
+                    }
+                }
+            }
+        }
     </script>
-    <style>
-        /* This ensures the font feels "intentional" and smooth */
-        body {letter-spacing: -0.01em;}
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
+    
+<body class="bg-arctic text-slate-800 font-sans antialiased">
+    
     <nav class="p-6 max-w-4xl mx-auto flex justify-between items-center">
-        <a href="https://www.linkedin.com/in/queralt-martin-saladich" class="text-blue-600 hover:underline">LinkedIn</a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0003-4798-1558" class="text-blue-600 hover:underline">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=jN04zBMAAAAJ&hl=ca" class="text-blue-600 hover:underline">Google Scholar</a>
-        <a href="mailto:queraltmartins@gmail" class="text-blue-600 hover:underline">Email</a>
+        <a href="https://www.linkedin.com/in/queralt-martin-saladich" class="text-azure hover:underline">LinkedIn</a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0003-4798-1558" class="text-azure hover:underline">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=jN04zBMAAAAJ&hl=ca" class="text-azure hover:underline">Google Scholar</a>
+        <a href="mailto:queraltmartins@gmail" class="text-azure hover:underline">Email</a>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-20">
-        <h1 class="text-5xl font-black mb-4">I'm <span class="text-blue-600">Queralt Martín-Saladich, PhD</span>.</h1>
-        <p class="text-2xl text-gray-600 mb-8 leading-relaxed">
-
-I hold a PhD in Computational Biomedical Engineering with 6+ years of experience applying AI/ML, medical image processing and analysis, and computational modeling to advance healthcare and biomedical research. My work integrates programming, mathematics, and medicine to help develop tools that support clinical decision-making and personalized patient management.</p>
+    <main class="max-w-6xl mx-auto px-8 py-20">
+        <header class="max-w-3xl">
+            <h1 class="text-7xl font-bold text-azure leading-tight mb-8">
+                I'm <span class="text-water">Queralt Martín-Saladich, PhD</span>.
+            </h1>
+            <p class="text-2xl text-slate-600 leading-relaxed font-light">
+                I hold a PhD in Computational Biomedical Engineering with 6+ years of experience applying AI/ML, medical image processing and analysis, and computational modeling to advance healthcare and biomedical research. My work integrates programming, mathematics, and medicine to help develop tools that support clinical decision-making and personalized patient management.
+            </p>
+        </header>
         
         <div class="h-1 w-20 bg-blue-600 mb-20"></div>
 
@@ -50,5 +51,9 @@ I hold a PhD in Computational Biomedical Engineering with 6+ years of experience
         </div>
     </main>
 
+    <footer class="p-20 text-center text-sm tracking-widest text-slate-400 uppercase">
+        Built with HTML & GitHub Pages • Queralt Martín-Saladich, 2026
+    </footer>
+    
 </body>
 </html>
