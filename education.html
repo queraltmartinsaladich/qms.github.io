@@ -8,11 +8,12 @@
     <title>Background - Queralt Martín-Saladich </title>
     <link href="https://api.fontshare.com/v2/css?f[]=glacial-indifference@400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {theme: {extend: {
-                    fontFamily: {'sans': ['"Glacial Indifference"', 'sans-serif'],'play': ['Elephant', '"Playfair Display"', 'serif']},
-                    colors: {'peach': '#FFCCBB', 'water': '#6EB5C0','azure': '#006C84', 'arctic': '#E2E8E4', 'white': '#FFFFFF'}}}}
+                    fontFamily: {'sans': ['"Glacial Indifference"', 'sans-serif'],'play': ['Elephant', '"Playfair Display"', 'serif'], 'grant': ['"EB Garamond"', 'serif']},
+                    colors: {'peach': '#FFCCBB', 'water': '#6EB5C0','azure': '#006C84', 'arctic': '#E2E8E4', 'white': '#FFFFFF', 'burgundy': '#7B1B38'}}}}
     </script>
     
 </head>
@@ -22,30 +23,27 @@
     <nav class="bg-azure">
         <div class="py-6 px-12 md:px-32 max-w-[1400px] mx-auto flex justify-between items-center font-sans text-lg text-white">        
             <a href="index.html" class="text-white hover:underline">Home</a>
-            <a href="https://www.linkedin.com/in/queralt-martin-saladich" class="text-white hover:underline">LinkedIn</a>
-            <a href="https://orcid.org/my-orcid?orcid=0000-0003-4798-1558" class="text-white hover:underline">ORCID</a>
-            <a href="https://scholar.google.com/citations?user=jN04zBMAAAAJ&hl=ca" class="text-white hover:underline">Google Scholar</a>
-            <a href="mailto:queraltmartins@gmail" class="text-white hover:underline">Email</a>
+            <a href="education.html" class="text-white hover:underline">Education</a>
+            <a href="experience.html" class="text-white hover:underline">Experience</a>
+            <a href="publications.html" class="text-white hover:underline">Publications</a>
+            <a href="others.html" class="text-white hover:underline">Others</a>
         </div>
     </nav>
 
     <main class="max-w-[1400px] mx-auto px-12 md:px-32 pt-16 pb-20">        
         <header class="max-w-4xl">
             <h1 class="text-4xl font-bold text-water leading-tight">
-                BACKGROUND
+                EDUCATION
             </h1>
         </header>
 
         <section class="pt-6 pb-20">
-            <h2 class="text-xl font-bold text-peach uppercase tracking-widest mb-8">
-                Education
-            </h2>
             <div class="space-y-10">
                 <div class="border-l-2 border-azure/20 pl-6">
                     <h3 class="text-2xl font-bold text-azure">PhD in Computational Biomedical Engineering</h3>
                     <p class="text-lg text-slate-600 font-medium">Universitat Pompeu Fabra - Vall d'Hebrón Institute of Research • 2022 — 2025</p>
                     <p class="text-slate-500 mt-2 italic">A Multi-Organ and Multi-Modal Data-Driven Analysis of Metabolic Patterns in Type 2 Diabetes. Unravelling the Pathologic Mechanisms Between Organs: The Impact of Tissue-Specific Insulin Resistance.</p>
-                    <p class="text-slate-500 mt-2 italic">Grants: FI20/00304 and MV23/00022.</p>
+                    <p class="font-grant text-slate-500 mt-2">Grants: FI20/00304 and MV23/00022.</p>
                 </div>
                 <div class="border-l-2 border-azure/20 pl-6">
                     <h3 class="text-2xl font-bold text-azure">MSc in Computational Biomedical Engineering</h3>
@@ -55,29 +53,14 @@
                     <h3 class="text-2xl font-bold text-azure">BSc in Physics</h3>
                     <p class="text-lg text-slate-600 font-medium">Universitat de Barcelona • 2016 — 2020</p>
                     <p class="text-slate-500 mt-2 italic">Mention in Fundamental Physics</p>
-                    <p class="text-slate-500 mt-2 italic">Fundación Areces Scholarship 2020</p>
+                    <p class="text-slate-500 font-grant mt-2">Fundación Areces Scholarship 2020</p>
                 </div>
                 <div class="border-l-2 border-azure/20 pl-6">
                     <h3 class="text-2xl font-bold text-azure">Scientific Baccalaureate</h3>
                     <p class="text-lg text-slate-600 font-medium">Fundació Llor • 2014 — 2016</p>
-                    <p class="text-slate-500 mt-2 italic">Fundación Areces Scholarship 2014-2016</p>
-                    <p class="text-slate-500 mt-2 italic">Class of 2016 valedictorian, Fundació Llor scholarship</p>
-                    <p class="text-slate-500 mt-2 italic">Academic excellence, Generalitat de Catalunya scholarship</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-16">
-            <h2 class="text-xl font-bold text-peach uppercase tracking-widest mb-8">Professional Experience</h2>
-            
-            <div class="space-y-10">
-                <div class="border-l-2 border-azure/20 pl-6">
-                    <h3 class="text-2xl font-bold text-azure">Senior Researcher / Computational Engineer</h3>
-                    <p class="text-lg text-slate-600 font-medium">Institution/Company Name • 20XX — Present</p>
-                    <ul class="list-disc list-inside text-slate-500 mt-4 space-y-2">
-                        <li>Developed AI/ML pipelines for medical image processing.</li>
-                        <li>Lead researcher on personalized patient management projects.</li>
-                    </ul>
+                    <p class="text-slate-500 mt-2 font-grant ">Fundación Areces Scholarship 2014-2016</p>
+                    <p class="text-slate-500 mt-2 font-grant ">Class of 2016 valedictorian, Fundació Llor scholarship</p>
+                    <p class="text-slate-500 mt-2 font-grant ">Academic excellence, Generalitat de Catalunya scholarship</p>
                 </div>
             </div>
         </section>
@@ -86,6 +69,11 @@
 
     <footer class="p-20 text-center text-sm tracking-widest text-slate-400 uppercase">
         Built with HTML & GitHub Pages • Queralt Martín-Saladich, 2026
+        <a href="https://www.linkedin.com/in/queralt-martin-saladich" class="text-white hover:underline">LinkedIn</a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0003-4798-1558" class="text-white hover:underline">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=jN04zBMAAAAJ&hl=ca" class="text-white hover:underline">Google Scholar</a>
+        <a href="https://github.com/queraltmartinsaladich" class="text-white hover:underline">Github</a>
+        <a href="mailto:queraltmartins@gmail" class="text-white hover:underline">Email</a>
     </footer>
     
 </body>
