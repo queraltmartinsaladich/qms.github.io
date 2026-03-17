@@ -1,6 +1,6 @@
 # Portfolio | Queralt Martín-Saladich, PhD
 
-This repository hosts my professional portfolio, showcasing my research in AI/ML in Healthcare and scientific divulgation.
+This repository hosts my professional portfolio, showcasing my research in AI/ML in Healthcare and scientific divulgation. Feel free to use the template (not the contents) but would appreciate acknowledging:)
 
 **🌐 Live Site:** [https://queraltmartinsaladich.github.io/qms.github.io/](https://queraltmartinsaladich.github.io/qms.github.io/)
 
