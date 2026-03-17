@@ -2,7 +2,7 @@
 
 This repository hosts my professional portfolio, showcasing my research in AI/ML in Healthcare and scientific divulgation.
 
-**🌐 Live Site:** [https://queraltmartinsaladich.github.io](https://queraltmartinsaladich.github.io)
+**🌐 Live Site:** [https://queraltmartinsaladich.github.io/qms.github.io/](https://queraltmartinsaladich.github.io/qms.github.io/)
 
 ---
 
