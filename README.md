@@ -1,4 +1,4 @@
-# Portfolio | Queralt Martín-Saladich, PhD
+# PORTFOLIO | Queralt Martín-Saladich, PhD
 
 This repo hosts my professional portfolio, highlighting my research in AI/ML for Healthcare and scientific divulgation. If you find it helpful, feel free to use the template (just not the actual content) - and if you do, I'd appreciate if you acknowledge my work :)
 
