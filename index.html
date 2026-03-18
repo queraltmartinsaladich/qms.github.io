@@ -20,16 +20,37 @@
 <body class="bg-arctic text-slate-800 font-sans antialiased">
     
     <nav class="bg-azure sticky top-0 md:relative z-50 shadow-md">
-        <div class="py-4 px-12 md:px-32 max-w-[1400px] mx-auto flex justify-between items-center font-sans text-white">        
-            <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Home</a>
-            <a href="education.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Education</a>
-            <a href="experience.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Experience</a>
-            <a href="skills.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Skills</a>
-            <a href="publications.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Publications</a>
-            <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Conferences</a>
-            <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Divulgation</a>
+        <div class="max-w-[1400px] mx-auto px-6 md:px-32 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-white text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Queralt M.S.</a>
+
+            <button id="menu-btn" class="text-white md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <div class="hidden md:flex gap-x-8 font-sans text-white">
+                <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Home</a>
+                <a href="education.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Education</a>
+                <a href="experience.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Experience</a>
+                <a href="skills.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Skills</a>
+                <a href="publications.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Publications</a>
+                <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Conferences</a>
+                <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Divulgation</a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-azure/95 border-t border-white/10 px-6 py-4 flex flex-col gap-y-4 font-sans text-white text-center">
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest py-2">Home</a>
+            <a href="education.html" class="text-xs font-bold uppercase tracking-widest py-2">Education</a>
+            <a href="experience.html" class="text-xs font-bold uppercase tracking-widest py-2">Experience</a>
+            <a href="skills.html" class="text-xs font-bold uppercase tracking-widest py-2">Skills</a>
+            <a href="publications.html" class="text-xs font-bold uppercase tracking-widest py-2">Publications</a>
+            <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest py-2">Conferences</a>
+            <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest py-2">Divulgation</a>
         </div>
     </nav>
+    
     <main class="max-w-[1400px] mx-auto px-12 md:pl-32 md:pr-32 pt-12 pb-10"> 
         <header class="mb-8">
             <h1 class="text-4xl font-bold font-play text-azure leading-tight whitespace-nowrap">
