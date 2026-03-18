@@ -20,17 +20,48 @@
     
 <body class="bg-arctic text-slate-800 font-sans antialiased">
     
-    <nav class="bg-azure">
-        <div class="py-4 px-12 md:px-32 max-w-[1400px] mx-auto flex justify-between items-center font-sans text-white">        
-            <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Home</a>
-            <a href="education.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Education</a>
-            <a href="experience.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Experience</a>
-            <a href="skills.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Skills</a>
-            <a href="publications.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Publications</a>
-            <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Conferences</a>
-            <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Divulgation</a>
+    <nav class="bg-azure sticky top-0 md:relative z-50 shadow-md md:shadow-none">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-32 py-4">
+            
+            <div class="flex md:hidden justify-center">
+                <button id="menu-btn" class="text-white focus:outline-none flex items-center gap-2">
+                    <span class="text-xs font-bold uppercase tracking-widest">Menu</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="hidden md:flex justify-between items-center font-sans text-white">        
+                <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Home</a>
+                <a href="education.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Education</a>
+                <a href="experience.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Experience</a>
+                <a href="skills.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Skills</a>
+                <a href="publications.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Publications</a>
+                <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Conferences</a>
+                <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest hover:text-peach transition-colors">Divulgation</a>
+            </div>
+        </div>
+    
+        <div id="mobile-menu" class="hidden md:!hidden bg-azure/95 border-t border-white/10 px-6 py-6 flex flex-col gap-y-5 font-sans text-white text-center">
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest">Home</a>
+            <a href="education.html" class="text-xs font-bold uppercase tracking-widest">Education</a>
+            <a href="experience.html" class="text-xs font-bold uppercase tracking-widest">Experience</a>
+            <a href="skills.html" class="text-xs font-bold uppercase tracking-widest">Skills</a>
+            <a href="publications.html" class="text-xs font-bold uppercase tracking-widest">Publications</a>
+            <a href="conferences.html" class="text-xs font-bold uppercase tracking-widest">Conferences</a>
+            <a href="divulgation.html" class="text-xs font-bold uppercase tracking-widest">Divulgation</a>
         </div>
     </nav>
+    
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+    
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
     
     <main class="max-w-[1400px] mx-auto px-12 md:pl-32 md:pr-32 pt-10 pb-10"> 
         <header class="max-w-4xl">
@@ -108,21 +139,21 @@
         </section>
     </main>
     
-    <footer class="p-10 flex flex-col items-center">
-        <div class="flex flex-wrap justify-center gap-x-9 gap-y-3 font-play text-base text-azure/40 mb-6">
+    <footer class="py-10 md:py-4 flex flex-col items-center bg-slate-50/50">
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-5 md:gap-x-9 font-play text-base text-azure/40 mb-12 md:mb-2 text-center">
             <a href="https://scholar.google.com/citations?user=jN04zBMAAAAJ&hl=ca" target="_blank" class="hover:text-peach transition-colors tracking-wider">Google Scholar</a>
-            <span class="text-azure/40">•</span>
+            <span class="hidden md:inline text-azure/40">•</span>
             <a href="https://www.linkedin.com/in/queralt-martin-saladich" target="_blank" class="hover:text-peach transition-colors tracking-wider">LinkedIn</a>
-            <span class="text-azure/40">•</span>
+            <span class="hidden md:inline text-azure/40">•</span>
             <a href="mailto:queraltmartins@gmail" class="hover:text-peach transition-colors tracking-wider">Contact</a>            
-            <span class="text-azure/40">•</span>
+            <span class="hidden md:inline text-azure/40">•</span>
             <a href="https://orcid.org/0000-0003-4798-1558" target="_blank" class="hover:text-peach transition-colors tracking-wider">ORCID</a>
-            <span class="text-azure/40">•</span>
+            <span class="hidden md:inline text-azure/40">•</span>
             <a href="https://github.com/queraltmartinsaladich" target="_blank" class="hover:text-peach transition-colors tracking-wider">GitHub</a>
-            <span class="text-azure/40">•</span>
+            <span class="hidden md:inline text-azure/40">•</span>
             <a href="https://www.researchgate.net/profile/Queralt-Martin-Saladich" target="_blank" class="hover:text-peach transition-colors tracking-wider">Research Gate</a>
         </div>
-        <p class="text-xs tracking-[0.2em] text-slate-400 uppercase font-sans">
+        <p class="text-[10px] md:text-xs tracking-[0.2em] text-slate-400 uppercase font-sans text-center px-6">            
             Built with HTML & GitHub Pages by Queralt Martín-Saladich, 2026
         </p>
     </footer>
